@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;    
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 30px rgba(0, 0, 0, .8);
+    margin: 10px 0 0 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paperSheet-container {
+    width: 410px;
+    height: 610px;
+    background: url('../img/white_paper.png') no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#typingAreaId {
+    width: 78%;
+    height: 75%;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    font-family: 'Special Elite', cursive;
+    font-size: 12px;
+    border: none;
+    line-height: 1.2;
+    outline: none;
+    font-weight: 400;
+    color: black;
+    background: transparent;
+    resize: none;
+}
+
+#typingAreaId::placeholder {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* tablet design */
+@media (min-width: 600px) {
+    #typingAreaId {
+        width: 78%;
+        height: 73%;
+    }
+}
